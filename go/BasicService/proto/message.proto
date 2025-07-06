@@ -1,0 +1,12 @@
+syntax = "proto3";
+option go_package = "transport.com/my_best_service";
+
+import "google/protobuf/timestamp.proto";
+
+message MyRequest{
+  google.protobuf.Timestamp time  = 1;
+  float value                     = 2;
+}
+message MyResponse{
+
+}

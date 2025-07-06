@@ -1,0 +1,8 @@
+syntax = "proto3";
+option go_package = "transport.com/my_best_service";
+
+import "message.proto";
+
+service MyBestService {
+  rpc Request(MyRequest) returns (MyResponse);
+}
